@@ -5,7 +5,8 @@ require('dotenv').config()
 const port = process.env.PORT
 const uri = process.env.ATLAS_URI
 //const jwt =require('jsonwebtoken');
-
+var cors = require('cors')
+app.use(cors())
 mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
