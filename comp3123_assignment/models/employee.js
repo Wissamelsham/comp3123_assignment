@@ -23,11 +23,11 @@ const employeeSchema = new mongoose.Schema({
     },
     gender:{
         type: String,
-        required: [true,'Gender Required'],
+        //required: [true,'Gender Required'],
     },
     salary:{
         type: Number,
-        required: [true,'Salary Required'],
+       // required: [true,'Salary Required'],
     }
 })
 
